@@ -30,7 +30,7 @@ DEBUG = False
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 
-ALLOWED_HOSTS = ['localhost', '.pythonanywhere.com', 'haruto0707.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '.pythonanywhere.com', 'haruto07070.pythonanywhere.com']
 
 
 # Application definition
