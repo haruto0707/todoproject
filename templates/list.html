@@ -1,19 +1,16 @@
 {% extends 'base.html' %}
 {% block header %}
-<div class="jumbotron">
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Todo List</h1>
-      <p class="lead">Todoを保存して効率的な毎日を</p>
-    </div>
+<div class="p-5 mb-4 bg-light rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">TodoList</h1>
+    <p class="col-md-8 fs-4">TodoListで効率的な毎日を</p>
+    <a href="{%url 'create'%}" class="btn btn-primary btn-lg" role="button">新規作成</a>
   </div>
 </div>
-{% endblock %}
+{% endblock header %}
 
 {%block content%}
 <div class="container">
-  <a href="{%url 'create'%}" class="btn btn-info btn-lg" tabindex="-1" role="button" aria-disabled="true">新規作成</a>
-
   {%for item in object_list%}
 
   <div class="alert alert-{{item.priority}}" role="alert">
